@@ -1,0 +1,37 @@
+Elm from the video - https://www.youtube.com/watch?v=DiZ1CfLQvIU
+
+Callback hell - nested
+What happens when an event happen, took difficult to naturally guess
+
+Explicit syncronization is bad. In Elm it's easy, implicit
+
+You work on sequence of values(Signal) at a time, not a single value.
+
+Functions don't change variables outside its scope
+
+Signals are data
+
+The code is 100% immutable, no side effects. Very good to explore concurrency
+programming
+
+Elm has a UPDATE function that runs every time the state machine changes
+Elm also has a UPDATE function for the visual elements 
+
+Elm does not compute elements that don't need to be changed. Smart caching
+
+----------------------------------------------------------------------------
+
+https://github.com/evancz/elm-architecture-tutorial/
+
+The code gets much more declarative. It means that the library has much more
+freedom to make clever optimizations. I just say that i want  it, not
+how i want it.
+
+Model Update View
+The elm program get an Action from the world, 
+Use the Action to Update de Model,
+Use the View to specity how the visual elements should look like.
+This helps us to keet the logic separeted from the View code.
+
+We want boundaries which appropriately expose functionality and hide implementation.
+
